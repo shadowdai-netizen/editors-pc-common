@@ -1,0 +1,52 @@
+@color-primary: #fa6400;
+
+.editor-draglist {
+  &__move {
+    cursor: pointer;
+  }
+
+  &__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 12px;
+
+    &-name {
+      height: 20px;
+      background: @color-primary;
+      border-radius: 3px;
+      width: 100%;
+      line-height: 20px;
+      padding-left: 5px;
+      color: #ffffff;
+      margin-left: 6px;
+    }
+
+    &-del {
+      width: 20px;
+      // height: 20px;
+      color: @color-primary;
+      border: solid 1px @color-primary;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 16px;
+      // font-size: 16px;
+      cursor: pointer;
+      margin-left: 6px;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border: none;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px -1px #777;
+  }
+}

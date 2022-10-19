@@ -1,0 +1,134 @@
+.listSetter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.listItemSelect {
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid #f55753;
+  }
+
+  &.active {
+    border: 1px solid #f55753;
+  }
+}
+
+.listItem {
+  width: 100%;
+  height: 30px;
+  padding-right: 7px;
+  font-size: 12px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: hsl(0, 0%, 97%);
+  border: 1px solid #ddd;
+
+  .grab {
+    cursor: move;
+    display: flex;
+    align-items: center;
+    height: 22px;
+    margin: 3px 0px 3px 3px;
+    padding: 0 2px;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+      border-radius: 1px;
+    }
+  }
+
+  .listItemBtn {
+    display: flex;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+
+
+  .edit {
+    .listItemBtn();
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    height: 22px;
+    width: 22px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+
+  .editActive {
+    .listItemBtn();
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    height: 22px;
+    width: 22px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    background-color: #fa6400;
+
+    svg {
+      fill: #ffffff;
+    }
+  }
+
+  .listItemContent {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+.listItem:last-child {
+  margin-bottom: 0;
+}
+
+.titles {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  >img {
+    height: 70%;
+    width: 20px;
+    object-fit: contain;
+    margin-right: 3px;
+  }
+
+  >p {
+    margin: 0 3px 0 0;
+  }
+}
+
+.titlesHeavy {
+  color: #333333;
+  font-weight: 700;
+  height: 32px;
+  padding: 0px 10px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.drawerWrapper {
+  .itemTitle {
+    color: #555;
+    padding-bottom: 3px;
+    line-height: 12px;
+  }
+
+  .item {
+    font-size: 12px;
+    padding-bottom: 15px;
+  }
+}

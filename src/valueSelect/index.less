@@ -1,0 +1,73 @@
+@import "../theme.less";
+
+.editor-textArea {
+  display: flex;
+  :global {
+    .ant-input {
+      overflow-y: auto !important;
+      font-size: 12px;
+    }
+
+    .ant-input:hover {
+      border-color: var(--primary-color);
+    }
+
+    .ant-input-focused,
+    .ant-input:focus {
+      border-color: var(--primary-color);
+      -webkit-box-shadow: var(--box-shadow);
+      box-shadow: var(--box-shadow);
+    }
+
+    .ant-input[disabled] {
+      color: rgba(0, 0, 0, 0.85);
+      background-color: #fff;
+      cursor: default;
+    }
+
+    .ant-input[disabled]:hover {
+      border-color: #d9d9d9;
+    }
+
+    //数字选择框样式
+    .ant-input-number-handler-up:hover {
+      height: 50% !important;
+    }
+    .ant-input-number-handler-down:hover {
+      height: 50% !important;
+    }
+    .ant-input-number-handler {
+      min-height: 50%;
+    }
+    .ant-input-number-handler-up-inner {
+      margin-top: -7px;
+    }
+    .ant-input-number:hover {
+      border-color: var(--primary-color);
+    }
+    .ant-input-number-focused,
+    .ant-input-number:focus {
+      border-color: var(--primary-color);
+      -webkit-box-shadow: var(--box-shadow);
+      box-shadow: var(--box-shadow);
+    }
+    .ant-input-number-handler-wrap {
+      z-index: 2;
+    }
+
+    :global(.ant-select) {
+      font-size: 12px;
+      width: 100%;
+    }
+  }
+}
+.button {
+  float: right;
+  margin-left: 5px;
+}
+.textArea {
+  height: 300px;
+}
+.inputNumber {
+  width: 100%;
+}

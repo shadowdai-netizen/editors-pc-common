@@ -1,0 +1,58 @@
+.commonEditor {
+}
+
+.fullEditor {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  :global {
+    .tox-tinymce {
+      border: none;
+    }
+    .tox-toolbar__primary {
+      justify-content: center;
+    }
+    .tox-sidebar-wrap {
+      background-color: #f8f9fa;
+      padding-top: 15px;
+      padding-bottom: 30px;
+    }
+    .tox-edit-area {
+      justify-content: center;
+      & > iframe {
+        background-color: rgba(0, 0, 0, 0.06);
+        width: 794px;
+        border: 1px solid #ebedf0;
+        box-shadow: 0 0 6px 0px rgba(31, 35, 41, 0.04);
+      }
+    }
+  }
+  &.h5 {
+    :global {
+      .tox-edit-area {
+        & > iframe {
+          width: 414px;
+        }
+      }
+    }
+  }
+}
+
+.blockEditor {
+  border-radius: 4px;
+  border: 1px solid #ebedf0;
+  :global {
+    .tox .tox-toolbar {
+      background-color: #fff;
+      border-bottom: 1px solid #ebedf0;
+    }
+    .tox-edit-area {
+      & > iframe {
+        background-color: rgba(0, 0, 0, 0.06);
+      }
+    }
+  }
+}

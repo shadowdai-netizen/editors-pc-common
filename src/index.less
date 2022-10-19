@@ -1,0 +1,130 @@
+:root {
+  --primary-color: #fa6400;
+  --primary-color-hover: #f55753;
+  // --primary-color-active: #204dd4;
+  --primary-color-active: #fa640033;
+  --primary-color-confirm: #fa6400a6;
+  --success-color: #52c41a;
+  --warning-color: #faad14;
+
+  --font-size-header: 14px; // 各类标题字号
+  --font-size-content: 12px; // 主体内容字号
+
+  --font-color-header: rgba(0, 0, 0, 0.85); // 各类标题文字颜色
+  --font-color-content: rgba(0, 0, 0, 0.85); // 主体内容文字颜色
+  --font-color-disabled: rgba(0, 0, 0, 0.25); // 失效文字颜色
+
+  --border-radius: 4px; // 组件/浮层圆角
+  --box-shadow: 0 0 0 2px #fa640033;
+  --box-shadow-primary: 0 2px 8px rgba(0, 0, 0, 0.15); // 浮层阴影
+  --box-shadow-hover: 0 3px 6px rgba(208, 2, 27, 0.16),
+    0 3px 6px rgba(208, 2, 27, 0.23); // hover阴影
+}
+
+// .custom_antd_input {
+//   :global {
+//     .ant-input {
+//       font-size: 12px;
+//       overflow-y: auto !important;
+//     }
+//     .ant-input-sm {
+//       padding: 2px 7px;
+//     }
+//     .ant-input:hover {
+//       border-color: var(--primary-color);
+//     }
+//     .ant-input-focused,
+//     .ant-input:focus {
+//       border-color: var(--primary-color);
+//       box-shadow: var(--box-shadow);
+//       -webkit-box-shadow: var(--box-shadow);
+//     }
+//     .ant-input[disabled] {
+//       cursor: default;
+//       color: rgba(0, 0, 0, 0.85);
+//       background-color: #fff;
+//     }
+//     .ant-input[disabled]:hover {
+//       border-color: #d9d9d9;
+//     }
+//   }
+// }
+
+.custom_antd_button {
+  :global {
+    .ant-btn {
+      font-size: 12px;
+      width: 100%;
+    }
+    .ant-btn:focus {
+      color: rgba(0, 0, 0, 0.85);
+      border: 1px solid #d9d9d9;
+    }
+    .ant-btn:hover:not([disabled]) {
+      color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+  }
+}
+
+// .custon_antd_inputnumber {
+//   :global {
+//     .ant-input-number-handler-up:hover {
+//       height: 50% !important;
+//     }
+//     .ant-input-number-handler-down:hover {
+//       height: 50% !important;
+//     }
+//     .ant-input-number-handler {
+//       min-height: 50%;
+//     }
+//     .ant-input-number-handler-up-inner {
+//       margin-top: -7px;
+//     }
+//     .ant-input-number:hover {
+//       border-color: var(--primary-color);
+//     }
+//     .ant-input-number-focused,
+//     .ant-input-number:focus {
+//       border-color: var(--primary-color);
+//       -webkit-box-shadow: var(--box-shadow);
+//       box-shadow: var(--box-shadow);
+//     }
+//     .ant-slider:hover .ant-slider-track {
+//       background-color: var(--primary-color);
+//     }
+//     .ant-slider:hover .ant-slider-handle {
+//       border: 2px solid var(--primary-color);
+//     }
+//     .ant-slider-track {
+//       background-color: var(--primary-color);
+//       z-index: 100;
+//     }
+//     .ant-slider-track:hover {
+//       background-color: var(--primary-color);
+//     }
+//     .ant-slider-handle {
+//       border: 2px solid var(--primary-color);
+//       z-index: 120;
+//     }
+//     .ant-slider-handle-dragging.ant-slider-handle-dragging.ant-slider-handle-dragging,
+//     .ant-slider-handle:focus {
+//       border-color: var(--primary-color);
+//       box-shadow: 0 0 0 0px var(--primary-color);
+//     }
+//     .ant-slider-step {
+//       background: #ddd;
+//       z-index: 80;
+//     }
+//     .ant-input-number-handler:hover {
+//       .ant-input-number-handler-down-inner,
+//       .ant-input-number-handler-up-inner {
+//         color: var(--primary-color);
+//       }
+//     }
+//     .ant-input-number-handler-wrap {
+//       z-index: 2;
+//     }
+//   }
+// }
+

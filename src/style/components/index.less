@@ -1,0 +1,318 @@
+// 颜色选择器
+.colorContainer {
+  width: 50px;
+  .value {
+    height: 25px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+  }
+}
+
+.imageContainer {
+  width: 50px;
+  .value {
+    height: 25px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-size: contain;
+    border: 1px solid #dddddd;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.customAntdSelect {
+  :global {
+    .ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+      border-color: @color-primary;
+      border-right-width: 1px !important;
+    }
+    .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input)
+      .ant-select-selector {
+      border-color: @color-primary;
+      border-color: @color-primary;
+      box-shadow: 0 0 0 2px #fa640033;
+      -webkit-box-shadow: 0 0 0 2px #fa640033;
+    }
+    .ant-select-disabled.ant-select-single:not(.ant-select-customize-input)
+      .ant-select-selector {
+      color: rgba(0, 0, 0, 0.85);
+      background: #fff;
+      cursor: default;
+    }
+    .ant-select-disabled.ant-select-multiple .ant-select-selector {
+      color: rgba(0, 0, 0, 0.85);
+      background: #fff;
+      cursor: default;
+    }
+    .ant-select-disabled.ant-select-multiple .ant-select-selection-item {
+      color: rgba(0, 0, 0, 0.85);
+      border-color: #f0f0f0;
+      cursor: default;
+    }
+    .ant-select-disabled.ant-select-multiple .ant-select-selector input {
+      cursor: default;
+    }
+  }
+}
+
+// 选择框
+.selectContainer {
+  width: 100%;
+  margin-top: 6px;
+  .select {
+    width: 100%;
+  }
+  .customAntdSelect();
+}
+
+// 字体编辑器容器
+.editorContainer {
+  width: 100%;
+  .config {
+    padding-bottom: 6px;
+    border-bottom: 1px dashed #e5e5e5;
+  }
+}
+
+// 编辑器标题
+.editorTitle {
+  display: flex;
+  font-weight: 400;
+  align-items: center;
+  justify-content: space-between;
+  .actions {
+    cursor: pointer;
+    color: #999999;
+  }
+}
+
+.gradientIcon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #999999;
+  height: 12px;
+  width: 12px;
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+  svg > path {
+    fill: #999999;
+  }
+  &.acitve {
+    svg > path {
+      fill: #fb6407;
+    }
+  }
+}
+
+.pceditorStylePopover {
+  :global {
+    .ant-popover-content {
+      margin-top: -4px;
+      margin-right: -6px;
+    }
+    .ant-popover-arrow {
+      margin-top: -4px;
+      margin-right: -6px;
+    }
+    .ant-form-item {
+      margin-bottom: 4px;
+    }
+    .ant-switch-checked {
+      background-color: @color-primary;
+    }
+    --antd-wave-shadow-color: @color-primary !important;
+    .ant-switch-checked:focus {
+      box-shadow: 0 0 0 2px #fa640033;
+    }
+  }
+}
+
+// 工具条
+.toolbar {
+  margin-top: 6px;
+  display: flex;
+  .icon {
+    height: 25px;
+    display: flex;
+    cursor: pointer;
+    min-width: 18px;
+    color: #999999;
+    align-items: center;
+  }
+}
+
+// 弹出框
+.popup {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  position: fixed;
+
+  > div {
+    position: absolute;
+  }
+}
+
+// 灰色容器
+.greyContainer {
+  width: 100%;
+  height: 25px;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #e7e7e7;
+  .value {
+    height: 100%;
+    position: relative;
+  }
+  .input {
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    input {
+      z-index: 1;
+      width: 100%;
+      color: #222;
+      text-align: center;
+    }
+  }
+  .hasUnit {
+    padding: 0px 20px;
+  }
+  .select {
+    position: relative;
+    .value {
+      top: 0;
+      width: 100%;
+      height: 100%;
+      padding: 0 4px;
+      color: #222;
+      overflow: hidden;
+      line-height: 25px;
+      position: absolute;
+      text-align: center;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+  .button {
+    height: 100%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.btnContainer {
+  border: none;
+  height: 26px;
+  display: block;
+  cursor: pointer;
+  padding: 0px 3px;
+  line-height: 26px;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 4px -1px #777;
+}
+
+.textContainer {
+  width: 100%;
+  .input {
+    width: 100%;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    background-color: #ffffff;
+    //box-shadow: 0 0 2px 0 #666666;
+    box-sizing: border-box;
+    transition: all 0.3s, height 0s;
+
+    &:hover {
+      border-color: #fa6400;
+    }
+
+    &:focus {
+      border-color: #fa6400;
+      -webkit-box-shadow: 0 0 0 2px #fa640033;
+      box-shadow: 0 0 0 2px #fa640033;
+    }
+  }
+
+  .inputdisabled {
+    cursor: default;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.85);
+  }
+}
+
+// ================公用================
+.label {
+  font-size: 10px;
+  color: #aaaaaa;
+  text-align: center;
+}
+
+.unitSelect {
+  right: 0;
+  position: absolute;
+  .customAntdSelect();
+  .unit {
+    top: 0;
+    right: 6px;
+    z-index: 2;
+    cursor: pointer;
+    position: absolute;
+  }
+}
+
+.selectDropdown {
+  :global {
+    .ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+      border-color: @color-primary;
+      border-right-width: 1px !important;
+    }
+    .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input)
+      .ant-select-selector {
+      border-color: @color-primary;
+      border-color: @color-primary;
+      box-shadow: 0 0 0 2px #fa640033;
+      -webkit-box-shadow: 0 0 0 2px #fa640033;
+    }
+    .ant-select-disabled.ant-select-single:not(.ant-select-customize-input)
+      .ant-select-selector {
+      color: rgba(0, 0, 0, 0.85);
+      background: #fff;
+      cursor: default;
+    }
+    .ant-select-disabled.ant-select-multiple .ant-select-selector {
+      color: rgba(0, 0, 0, 0.85);
+      background: #fff;
+      cursor: default;
+    }
+    .ant-select-disabled.ant-select-multiple .ant-select-selection-item {
+      color: rgba(0, 0, 0, 0.85);
+      border-color: #f0f0f0;
+      cursor: default;
+    }
+    .ant-select-disabled.ant-select-multiple .ant-select-selector input {
+      cursor: default;
+    }
+    .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+      color: @color-primary;
+      background-color: #fff;
+    }
+  }
+}
+// ================公用================
+
+@import url('../../global/global.less');

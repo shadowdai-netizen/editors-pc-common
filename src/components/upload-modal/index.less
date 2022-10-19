@@ -1,0 +1,136 @@
+@import '../../theme';
+
+.editor-upload {
+  position: relative;
+  height: 25px;
+
+  &__img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 25px;
+    border-radius: 3px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 12px;
+    cursor: pointer;
+    border: 1px rgba(170, 170, 170) solid;
+  }
+  &__btn {
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
+    height: 25px;
+    font-size: 30px;
+    font-weight: lighter;
+    line-height: 25px;
+    text-align: center;
+
+    border-radius: 7px;
+    border: 1px #dddddd solid;
+    background: rgba(216, 216, 216, 0.43);
+  }
+  &__input {
+    position: fixed;
+    left: 0;
+    top: -9999px;
+    visibility: hidden;
+  }
+  &__modal {
+    position: relative;
+    &-text {
+      width: 100%;
+      height: 200px;
+      position: relative;
+      z-index: 1;
+      opacity: 0.1;
+      margin-top: 8px;
+    }
+    &-placeholder {
+      width: 100%;
+      height: 200px;
+      position: absolute;
+      top: 8px;
+      border: 1px dashed #d0c7c7;
+      &-text {
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        color: rgba(0, 0, 0, 0.5);
+      }
+      &-img {
+        height: 198px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  &__modalbtn {
+    cursor: pointer;
+    display: block;
+    width: 100px;
+    text-align: center;
+    border: none;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px -1px #777;
+    color: rgba(0, 0, 0, 0.85);
+  }
+  &__footBtn {
+    position: relative;
+    height: 25px;
+    &-determine {
+      position: absolute;
+      right: 8px;
+    }
+  }
+}
+
+html,
+body {
+  .customModal {
+    :global {
+      .ant-modal-header {
+        padding: 16px 24px;
+        border-bottom: 1px solid #f0f0f0;
+      }
+
+      .ant-modal-body {
+        padding: 24px;
+      }
+
+      .ant-modal-footer {
+        padding: 10px 16px;
+        border-top: 1px solid #f0f0f0;
+      }
+    }
+  }
+}
+
+.input {
+  flex: 1;
+  height: 26px;
+  display: block;
+  padding: 5px 10px;
+  margin-right: 4px;
+  border-radius: 3px;
+  border: 1px solid #eee;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  transition: all 0.3s, height 0s;
+  font-size: 12px;
+  &:hover {
+    border-color: #fa6400;
+  }
+  &:focus {
+    border-color: #fa6400;
+    box-shadow: 0 0 0 2px #fa640033;
+  }
+}

@@ -1,0 +1,1 @@
+export const editorsConfigKey: string = '__editorsConfig__';

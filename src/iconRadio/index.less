@@ -1,0 +1,41 @@
+.imgSelect {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: -10px;
+  margin-left: -10px;
+}
+
+.imgSelectItem {
+  padding: 4px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  border-radius: 3px;
+  &:hover {
+    border: 1px dashed var(--primary-color);
+  }
+}
+
+.small {
+  width: 22px;
+  height: 22px;
+}
+
+.middle {
+  width: 28px;
+  height: 28px;
+}
+
+.imgSelectItemActive {
+  border: 1px solid var(--primary-color)
+}
+
+.image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

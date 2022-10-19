@@ -1,0 +1,37 @@
+.colorBoxContainer {
+  width: 16px;
+  height: 16px;
+  margin: 0px 10px 10px 0px;
+  position: absolute;
+  bottom: 0;
+  right: 2px;
+  border: 1px solid #00000026;
+  border-radius: 3px;
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    overflow: hidden;
+    border-radius: 2px;
+    div {
+      height: 7px;
+      width: 7px;
+      &:nth-child(1) {
+        background-color: #80808070;
+      }
+      &:nth-child(2) {
+        background-color: #ffffff;
+      }
+      &:nth-child(3) {
+        background-color: #ffffff;
+      }
+      &:nth-child(4) {
+        background-color: #80808070;
+      }
+    }
+  }
+}

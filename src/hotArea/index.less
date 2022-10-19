@@ -1,0 +1,84 @@
+.hotAreaDrawer {
+  :global {
+    .ant-drawer-body {
+      padding: 0 0 0 24px;
+    }
+  }
+}
+
+.wrapper {
+  display: flex;
+  height: 100%;
+
+  .hotAreaContainer {
+    width: 544px;
+    margin-right: 24px;
+    overflow: auto;
+    height: 100%;
+  }
+
+  .hotAreaOperate {
+    flex: 1;
+    box-shadow: inset 1px 0 0 #EEEFF0;
+    overflow: auto;
+    height: 100%;
+    padding: 24px;
+
+    :global {
+      .ant-form-item-label label {
+        width: 100%;
+      }
+    }
+
+    .label {
+      flex: 1;
+      display: flex;
+      align-items: center;
+
+      .labelTitle {
+        flex: 1;
+      }
+
+      .deleteIcon {
+        width: 22px;
+        height: 22px;
+        padding: 0;
+        margin-left: 4px;
+      }
+    }
+  }
+
+  .addHotArea {
+    width: 100%;
+  }
+}
+
+.drawerFooter {
+  display: flex;
+  justify-content: flex-end;
+
+  .okBtn {
+    margin-left: 8px;
+  }
+}
+
+.openBtn {
+  font-size: 12px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  border: none;
+  height: 26px;
+  line-height: 26px;
+  border-radius: 3px;
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 4px -1px #777;
+  box-sizing: border-box;
+
+  &:hover {
+    border-radius: 3px;
+    background-color: #f9f9f9;
+    box-shadow: 0 1px 4px -1px #777;
+    box-sizing: border-box;
+  }
+}
