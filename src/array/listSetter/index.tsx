@@ -5,7 +5,7 @@ import { Drawer, Tooltip } from 'antd'
 //   SortableElement,
 //   SortableHandle,
 // } from 'react-sortable-hoc'
-import { arrayMoveImmutable } from 'array-move'
+import { arrayMoveImmutable } from '../../utils'
 import RenderEditor from './renderEditor'
 import { editorsConfigKey } from './../../constant'
 import {

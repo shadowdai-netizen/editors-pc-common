@@ -1,6 +1,6 @@
 {
   "name": "@mybricks/editors-pc-common",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -20,15 +20,7 @@
   "dependencies": {
     "@mybricks/code-editor": "1.0.1",
     "@tinymce/tinymce-react": "3.13.1",
-    "@uiw/react-color-sketch": "^1.1.0",
-    "array-move": "4.0.0",
-    "babel-standalone": "6.26.0",
-    "color-string": "1.9.1",
-    "cropperjs": "^1.5.12",
-    "nanoid": "3.3.3",
-    "react-datasheet-grid": "4.4.0",
-    "react-linear-gradient-picker": "^3.0.1",
-    "react-mixin-crops": "0.0.1"
+    "@uiw/react-color-sketch": "^1.1.0"
   },
   "devDependencies": {
     "@ant-design/icons": "4.7.0",
