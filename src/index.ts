@@ -10,6 +10,7 @@ import EditorIconRadio from "./iconRadio";
 import EditorImageSelector from "./imageSelector";
 import EditorTextArea from "./textArea";
 import EditorAlign from "./align";
+import EditorIcon from "./icon";
 import EditorRadio from "./radio";
 import EditorCode from "./jsCoder";
 import EditorMap from "./map";
@@ -45,6 +46,7 @@ const PcEditorMap: any = {
   DRAGLIST: EditorDragList,
   CHARACTER: EditorCharacter,
   ICONRADIO: EditorIconRadio,
+  ICON: EditorIcon,
   IMAGESELECTOR: EditorImageSelector,
   INPUTNUMBER: EditorInputNumber,
   SLIDER: EditorSlider,
@@ -56,7 +58,7 @@ const PcEditorMap: any = {
   EXPRESSION: Expression,
 };
 
-export default function PcEditor(props: EditorProps): any {
+function PcEditor(props: EditorProps): any {
   const { editConfig } = props;
 
   let editor;
@@ -75,6 +77,6 @@ export default function PcEditor(props: EditorProps): any {
   }
 
   return;
-
-  // return typeof render === 'function' && render(props);
 }
+
+export { PcEditor, PcEditorMap };

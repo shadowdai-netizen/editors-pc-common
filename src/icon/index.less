@@ -1,0 +1,52 @@
+.editor-icon {
+  &__button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border: none;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px -1px #777;
+    &-editIcon {
+      margin-right: 8px;
+    }
+  }
+}
+
+.iconBody {
+  height: 100%;
+  :global {
+    .ant-modal-body {
+      div:hover {
+        background-color: #ffd1d6;
+        color: #fff;
+        span {
+          transform: scale(1.2);
+          transition: transform 0.3s ease-in-out;
+          will-change: transform;
+        }
+      }
+    }
+  }
+  .icon {
+    // margin: 0px 18px 18px 18px;
+    margin: 0px 8px 8px 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.wrap {
+  left: inherit;
+  right: 281px;
+  bottom: 25px;
+  border-radius: 4px;
+  overflow: hidden;
+}
