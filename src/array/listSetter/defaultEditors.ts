@@ -6,6 +6,8 @@ import EditorTextArea from "./../../textArea"
 import EditorRadio from "./../../radio"
 import EditorSlider from "./../../slider"
 import Expression from './../../expression'
+import EditorValueSelect from './../../valueSelect'
+import EditorCode from './../../jsCoder'
 
 import { typeCheck } from "./../../utils"
 
@@ -18,6 +20,8 @@ const PcEditorMap: any = {
   INPUTNUMBER: EditorInputNumber,
   SLIDER: EditorSlider,
   EXPRESSION: Expression,
+  VALUESELECT: EditorValueSelect,
+  CODE: EditorCode,
 };
 
 export default function PcEditor(props: any): any {
