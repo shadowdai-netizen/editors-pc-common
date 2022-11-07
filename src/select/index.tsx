@@ -103,12 +103,14 @@ export default function ({ editConfig }: EditorProps): any {
     };
   }, []);
 
+  const showSearch = model.relOptions.showSearch || model.relOptions.useAnyToEnter;
+
   return (
     <div className={`${css['editor-select']} fangzhou-theme`}>
       <Select
         size={(window as any)[editorsConfigKey]?.size || 'small'}
-        showSearch={model.relOptions.showSearch || model.relOptions.useAnyToEnter}
-        onSearch={onSearch}
+        showSearch={showSearch}
+        onSearch={ showSearch ? onSearch : void 0 }
         optionFilterProp='label'
         {...model.relOptions.otherConfig}
         value={model.val}
